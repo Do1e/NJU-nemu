@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.2"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "nemu",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "nemu::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nemu-Debug-1295ac91f51e9829eade.json",
+					"name" : "nemu",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/do1e/Arch/OneDrive/20212\u5927\u4e09\u4e0b/\u8ba1\u7b97\u673a\u7cfb\u7edf\u57fa\u7840/PA/PA-NJU/nemu/nemu/build",
+		"source" : "/home/do1e/Arch/OneDrive/20212\u5927\u4e09\u4e0b/\u8ba1\u7b97\u673a\u7cfb\u7edf\u57fa\u7840/PA/PA-NJU/nemu/nemu"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

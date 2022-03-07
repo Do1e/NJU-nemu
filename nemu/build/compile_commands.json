@@ -1,0 +1,457 @@
+[
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/main.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/main.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/main.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/parse_args.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/parse_args.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/parse_args.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/alu.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/alu.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/alu.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/cpu.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/cpu.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/cpu.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/fpu.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/fpu.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/fpu.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/intr.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/intr.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/intr.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/reg.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/reg.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/reg.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/decode/debug.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/decode/debug.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/decode/debug.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/decode/modrm.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/decode/modrm.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/decode/modrm.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/decode/opcode.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/decode/opcode.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/decode/opcode.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/decode/opcode_ref.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/decode/opcode_ref.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/decode/opcode_ref.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/decode/operand.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/decode/operand.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/decode/operand.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/decode/sib.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/decode/sib.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/decode/sib.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/adc.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/adc.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/adc.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/add.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/add.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/add.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/and.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/and.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/and.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/bt.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/bt.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/bt.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/call.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/call.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/call.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/cbw.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/cbw.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/cbw.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/cli.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/cli.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/cli.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/cltd.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/cltd.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/cltd.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/cmov.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/cmov.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/cmov.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/cmp.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/cmp.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/cmp.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/cmps.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/cmps.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/cmps.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/data_size.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/data_size.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/data_size.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/dec.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/dec.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/dec.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/div.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/div.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/div.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/flags.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/flags.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/flags.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/group.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/group.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/group.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/hlt.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/hlt.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/hlt.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/idiv.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/idiv.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/idiv.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/imul.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/imul.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/imul.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/in.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/in.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/in.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/inc.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/inc.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/inc.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/int_.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/int_.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/int_.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/inv.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/inv.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/inv.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/iret.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/iret.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/iret.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/jcc.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/jcc.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/jcc.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/jmp.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/jmp.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/jmp.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/lea.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/lea.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/lea.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/leave.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/leave.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/leave.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/lgdt.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/lgdt.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/lgdt.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/lidt.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/lidt.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/lidt.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/mov.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/mov.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/mov.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/movs.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/movs.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/movs.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/mul.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/mul.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/mul.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/neg.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/neg.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/neg.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/nemu_trap.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/nemu_trap.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/nemu_trap.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/nop.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/nop.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/nop.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/not.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/not.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/not.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/opcode_2_byte.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/opcode_2_byte.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/opcode_2_byte.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/or.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/or.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/or.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/out.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/out.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/out.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/pop.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/pop.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/pop.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/push.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/push.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/push.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/rep_repe.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/rep_repe.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/rep_repe.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/ret.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/ret.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/ret.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/sar.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/sar.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/sar.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/sbb.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/sbb.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/sbb.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/setcc.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/setcc.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/setcc.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/shl.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/shl.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/shl.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/shr.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/shr.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/shr.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/sti.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/sti.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/sti.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/stos.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/stos.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/stos.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/sub.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/sub.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/sub.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/test.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/test.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/test.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/x87.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/x87.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/x87.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/instr/xor.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/xor.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/instr/xor.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/test/alu_test.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/test/alu_test.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/test/alu_test.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/cpu/test/fpu_test.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/test/fpu_test.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/cpu/test/fpu_test.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/device/i8259_pic.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/device/i8259_pic.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/device/i8259_pic.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/device/sdl.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/device/sdl.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/device/sdl.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/device/dev/audio-web.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/device/dev/audio-web.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/device/dev/audio-web.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/device/dev/audio.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/device/dev/audio.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/device/dev/audio.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/device/dev/ide.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/device/dev/ide.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/device/dev/ide.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/device/dev/keyboard.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/device/dev/keyboard.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/device/dev/keyboard.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/device/dev/serial.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/device/dev/serial.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/device/dev/serial.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/device/dev/timer.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/device/dev/timer.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/device/dev/timer.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/device/dev/vga-palette.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/device/dev/vga-palette.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/device/dev/vga-palette.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/device/dev/vga.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/device/dev/vga.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/device/dev/vga.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/device/io/mm_io.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/device/io/mm_io.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/device/io/mm_io.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/device/io/port_io.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/device/io/port_io.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/device/io/port_io.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/memory/memory.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/memory/memory.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/memory/memory.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/memory/mmu/cache.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/memory/mmu/cache.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/memory/mmu/cache.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/memory/mmu/page.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/memory/mmu/page.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/memory/mmu/page.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/memory/mmu/segment.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/memory/mmu/segment.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/memory/mmu/segment.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/memory/mmu/tlb.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/memory/mmu/tlb.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/memory/mmu/tlb.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/monitor/breakpoint.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/monitor/breakpoint.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/monitor/breakpoint.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/monitor/elf.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/monitor/elf.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/monitor/elf.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/monitor/expr.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/monitor/expr.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/monitor/expr.c"
+},
+{
+  "directory": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/build",
+  "command": "/usr/bin/clang-13  -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../include -I/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/../libs/nemu-ref/include -m32 -g -m32 -o CMakeFiles/nemu.dir/src/monitor/ui.c.o -c /home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/monitor/ui.c",
+  "file": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/PA-NJU/nemu/nemu/src/monitor/ui.c"
+}
+]
