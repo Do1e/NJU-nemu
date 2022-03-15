@@ -1,7 +1,7 @@
 # 2022NJU计算机系统基础课程PA
 * 本代码仅供参考，请遵守`LICENSE`，请勿抄袭。
-## 如何将提供的代码拷贝到自己的Linux运行
-1. Linux安装32位支持库、libsdl1.2-dev（可自行百度）。
+## 如何将提供的代码拷贝到自己的Linux运行（以下步骤仅供参考）
+1. Linux安装32位支持库、libsdl1.2-dev等支持库（可自行百度）。
 2. nemu/src/cpu/fpu.c的第4行或者nemu/src/cpu/cpu.c的第11行都有`FPU fpu`，删除其中一个，我删除的是cpu.c里的。
 3. 若要使用老师提供的nemu/Makefile，在`CFLAGS`和`LDFLAGS`后面加上` -m32`。
 4. 推荐使用cmake，在Linux下安装cmake，在vs code中安装cmake、C/C++插件。
