@@ -9,30 +9,30 @@
 ```c
 inline uint32_t sign_ext(uint32_t x, size_t data_size)
 {
-        assert(data_size == 16 || data_size == 8 || data_size == 32);
-        switch (data_size)
-        {
-        case 8:
-                return (int32_t)((int8_t)(x & 0xff));
-        case 16:
-                return (int32_t)((int16_t)(x & 0xffff));
-        default:
-                return (int32_t)x;
-        }
+    assert(data_size == 16 || data_size == 8 || data_size == 32);
+    switch (data_size)
+    {
+    case 8:
+        return (int32_t)((int8_t)(x & 0xff));
+    case 16:
+        return (int32_t)((int16_t)(x & 0xffff));
+    default:
+        return (int32_t)x;
+    }
 }
 
 inline uint64_t sign_ext_64(uint32_t x, size_t data_size)
 {
-        assert(data_size == 16 || data_size == 8 || data_size == 32);
-        switch (data_size)
-        {
-        case 8:
-                return (int64_t)((int8_t)(x & 0xff));
-        case 16:
-                return (int64_t)((int16_t)(x & 0xffff));
-        default:
-                return (int64_t)((int32_t)x);
-        }
+    assert(data_size == 16 || data_size == 8 || data_size == 32);
+    switch (data_size)
+    {
+    case 8:
+        return (int64_t)((int8_t)(x & 0xff));
+    case 16:
+        return (int64_t)((int16_t)(x & 0xffff));
+    default:
+        return (int64_t)((int32_t)x);
+    }
 }
 ```
 剪切到nemu/src/cpu/alu.c，并在nemu/include/cpu/alu.h加上
@@ -46,49 +46,43 @@ cmake_minimum_required(VERSION 3.10.2)
 # Project name
 PROJECT(nemu)
 # Head file path
-INCLUDE_DIRECTORIES(
-	${PROJECT_SOURCE_DIR}/include ${PROJECT_SOURCE_DIR}/../include ${PROJECT_SOURCE_DIR}/../libs/nemu-ref/include
-)
-# Source directory: src/
-AUX_SOURCE_DIRECTORY(${PROJECT_SOURCE_DIR}/src DIR_SRCS)
-AUX_SOURCE_DIRECTORY(${PROJECT_SOURCE_DIR}/src/cpu DIR_SRCS)
-AUX_SOURCE_DIRECTORY(${PROJECT_SOURCE_DIR}/src/cpu/decode DIR_SRCS)
-AUX_SOURCE_DIRECTORY(${PROJECT_SOURCE_DIR}/src/cpu/instr DIR_SRCS)
-AUX_SOURCE_DIRECTORY(${PROJECT_SOURCE_DIR}/src/cpu/test DIR_SRCS)
-AUX_SOURCE_DIRECTORY(${PROJECT_SOURCE_DIR}/src/device DIR_SRCS)
-AUX_SOURCE_DIRECTORY(${PROJECT_SOURCE_DIR}/src/device/dev DIR_SRCS)
-AUX_SOURCE_DIRECTORY(${PROJECT_SOURCE_DIR}/src/device/io DIR_SRCS)
-AUX_SOURCE_DIRECTORY(${PROJECT_SOURCE_DIR}/src/memory DIR_SRCS)
-AUX_SOURCE_DIRECTORY(${PROJECT_SOURCE_DIR}/src/memory/mmu DIR_SRCS)
-AUX_SOURCE_DIRECTORY(${PROJECT_SOURCE_DIR}/src/monitor DIR_SRCS)
+INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR}/nemu/include ${PROJECT_SOURCE_DIR}/include ${PROJECT_SOURCE_DIR}/libs/nemu-ref/include)
+
+AUX_SOURCE_DIRECTORY(${PROJECT_SOURCE_DIR}/nemu/src NEMU_DIR_SRCS)
+AUX_SOURCE_DIRECTORY(${PROJECT_SOURCE_DIR}/nemu/src/cpu NEMU_DIR_SRCS)
+AUX_SOURCE_DIRECTORY(${PROJECT_SOURCE_DIR}/nemu/src/cpu/decode NEMU_DIR_SRCS)
+AUX_SOURCE_DIRECTORY(${PROJECT_SOURCE_DIR}/nemu/src/cpu/instr NEMU_DIR_SRCS)
+AUX_SOURCE_DIRECTORY(${PROJECT_SOURCE_DIR}/nemu/src/cpu/test NEMU_DIR_SRCS)
+AUX_SOURCE_DIRECTORY(${PROJECT_SOURCE_DIR}/nemu/src/device NEMU_DIR_SRCS)
+AUX_SOURCE_DIRECTORY(${PROJECT_SOURCE_DIR}/nemu/src/device/dev NEMU_DIR_SRCS)
+AUX_SOURCE_DIRECTORY(${PROJECT_SOURCE_DIR}/nemu/src/device/io NEMU_DIR_SRCS)
+AUX_SOURCE_DIRECTORY(${PROJECT_SOURCE_DIR}/nemu/src/memory NEMU_DIR_SRCS)
+AUX_SOURCE_DIRECTORY(${PROJECT_SOURCE_DIR}/nemu/src/memory/mmu NEMU_DIR_SRCS)
+AUX_SOURCE_DIRECTORY(${PROJECT_SOURCE_DIR}/nemu/src/monitor NEMU_DIR_SRCS)
+
 # Set environment variable
-SET(NEMU
-	${DIR_SRCS}
-)
+SET(NEMU ${NEMU_DIR_SRCS})
 # Set Compiler，指定编译为32位程序
 SET(CMAKE_C_FLAGS "-m32")
 SET(CMAKE_CXX_FLAGS "-m32")
 
-# Add executable file: /bin/test_out，程序输出名称
 ADD_EXECUTABLE(nemu ${NEMU})
-set_target_properties(nemu PROPERTIES COMPILE_FLAGS "-m32" LINK_FLAGS "-m32")
-link_libraries(${PROJECT_SOURCE_DIR}/../libs/nemu-ref/lib-nemu-ref.a)
-target_link_libraries(nemu PRIVATE readline SDL ${PROJECT_SOURCE_DIR}/../libs/nemu-ref/lib-nemu-ref.a)
+set_target_properties(nemu PROPERTIES COMPILE_FLAGS "-m32 -ggdb3 -MP -Wall -Werror -O2" LINK_FLAGS "-m32")
+target_link_libraries(nemu PRIVATE readline SDL ${PROJECT_SOURCE_DIR}/libs/nemu-ref/lib-nemu-ref.a)
 ```
 7. 界面左下角改为debug模式。
 ![](https://gitee.com/do1e/file-bed/raw/master/1646617632458.png)
-8. 由于运行需要参数，vs code默认不给参数，因此可根据debug的内容，在nemu/src/main.c的main函数开头加上
-```c
-argc = 2;
-argv[1] = "--test-reg";
+8. 由于运行需要参数，vs code默认不给参数，因此可根据debug的内容，在`.vscode/settings.json`中加入如下配置：
+```json
+{
+    "cmake.debugConfig": {
+    "args": [
+        "--test-fpu",
+            "add"
+    ]
+    }
+}
 ```
-或
-```c
-argc = 3;
-argv[1] = "--test-alu";
-argv[2] = "add";
-```
-具体参数见pa_nju/Makefile
 
 9. 快乐地debug或者run吧。
 ![](https://gitee.com/do1e/file-bed/raw/master/1646617661458.png)

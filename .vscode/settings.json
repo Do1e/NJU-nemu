@@ -1,0 +1,8 @@
+{
+    "cmake.debugConfig": {
+        "args": [
+            "--test-fpu",
+			"add"
+        ]
+    }
+}
