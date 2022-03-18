@@ -1,8 +1,10 @@
 {
     "cmake.debugConfig": {
         "args": [
-            "--test-fpu",
-			"add"
-        ]
+            "--autorun",
+			"--testcase",
+            "mov"
+        ],
+        "cwd": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/my_ans/nemu"
     }
 }
