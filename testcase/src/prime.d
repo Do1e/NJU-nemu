@@ -1,2 +1,2 @@
-src/prime.o: src/prime.c ../include/trap.h
-../include/trap.h:
+src/prime.o: src/prime.c src/trap.h
+src/trap.h:

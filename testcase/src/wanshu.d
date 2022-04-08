@@ -1,2 +1,2 @@
-src/wanshu.o: src/wanshu.c ../include/trap.h
-../include/trap.h:
+src/wanshu.o: src/wanshu.c src/trap.h
+src/trap.h:

@@ -1,2 +1,2 @@
-src/gotbaha.o: src/gotbaha.c ../include/trap.h
-../include/trap.h:
+src/gotbaha.o: src/gotbaha.c src/trap.h
+src/trap.h:

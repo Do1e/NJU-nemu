@@ -1,2 +1,2 @@
-src/bubble-sort.o: src/bubble-sort.c ../include/trap.h
-../include/trap.h:
+src/bubble-sort.o: src/bubble-sort.c src/trap.h
+src/trap.h:

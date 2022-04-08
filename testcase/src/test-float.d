@@ -1,2 +1,2 @@
-src/test-float.o: src/test-float.c ../include/trap.h
-../include/trap.h:
+src/test-float.o: src/test-float.c src/trap.h
+src/trap.h:

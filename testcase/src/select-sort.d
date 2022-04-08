@@ -1,2 +1,2 @@
-src/select-sort.o: src/select-sort.c ../include/trap.h
-../include/trap.h:
+src/select-sort.o: src/select-sort.c src/trap.h
+src/trap.h:

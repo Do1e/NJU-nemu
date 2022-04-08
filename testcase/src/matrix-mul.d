@@ -1,2 +1,2 @@
-src/matrix-mul.o: src/matrix-mul.c ../include/trap.h
-../include/trap.h:
+src/matrix-mul.o: src/matrix-mul.c src/trap.h
+src/trap.h:

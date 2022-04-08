@@ -2,9 +2,9 @@
     "cmake.debugConfig": {
         "args": [
             "--autorun",
-			"--testcase",
-            "mov"
+            "--testcase",
+            "bit"
         ],
-        "cwd": "/home/do1e/Arch/OneDrive/20212大三下/计算机系统基础/PA/my_ans/nemu"
+        "cwd": "/home/do1e/Arch/OneDrive - njuee/20212大三下/计算机系统基础/PA/NJU-nemu"
     }
 }

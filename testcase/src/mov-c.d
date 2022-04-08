@@ -1,2 +1,2 @@
-src/mov-c.o: src/mov-c.c ../include/trap.h
-../include/trap.h:
+src/mov-c.o: src/mov-c.c src/trap.h
+src/trap.h:

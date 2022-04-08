@@ -1,2 +1,2 @@
-src/sub-longlong.o: src/sub-longlong.c ../include/trap.h
-../include/trap.h:
+src/sub-longlong.o: src/sub-longlong.c src/trap.h
+src/trap.h:

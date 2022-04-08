@@ -1,2 +1,2 @@
-src/sum.o: src/sum.c ../include/trap.h
-../include/trap.h:
+src/sum.o: src/sum.c src/trap.h
+src/trap.h:

@@ -1,2 +1,2 @@
-src/struct.o: src/struct.c ../include/trap.h
-../include/trap.h:
+src/struct.o: src/struct.c src/trap.h
+src/trap.h:

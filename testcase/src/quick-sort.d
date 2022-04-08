@@ -1,2 +1,2 @@
-src/quick-sort.o: src/quick-sort.c ../include/trap.h
-../include/trap.h:
+src/quick-sort.o: src/quick-sort.c src/trap.h
+src/trap.h:

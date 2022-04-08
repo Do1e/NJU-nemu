@@ -10,7 +10,7 @@ src/hello-str.o: src/hello-str.c ../libs/newlib/include/stdio.h \
  ../libs/newlib/include/machine/types.h \
  ../libs/newlib/include/sys/stdio.h ../libs/newlib/include/string.h \
  ../libs/newlib/include/sys/cdefs.h ../libs/newlib/include/sys/string.h \
- ../include/trap.h
+ src/trap.h
 ../libs/newlib/include/stdio.h:
 ../libs/newlib/include/_ansi.h:
 ../libs/newlib/include/newlib.h:
@@ -29,4 +29,4 @@ src/hello-str.o: src/hello-str.c ../libs/newlib/include/stdio.h \
 ../libs/newlib/include/string.h:
 ../libs/newlib/include/sys/cdefs.h:
 ../libs/newlib/include/sys/string.h:
-../include/trap.h:
+src/trap.h:

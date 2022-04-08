@@ -1,2 +1,2 @@
-src/max.o: src/max.c ../include/trap.h
-../include/trap.h:
+src/max.o: src/max.c src/trap.h
+src/trap.h:

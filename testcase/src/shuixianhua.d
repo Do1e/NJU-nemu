@@ -1,2 +1,2 @@
-src/shuixianhua.o: src/shuixianhua.c ../include/trap.h
-../include/trap.h:
+src/shuixianhua.o: src/shuixianhua.c src/trap.h
+src/trap.h:

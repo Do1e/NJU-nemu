@@ -1,2 +1,2 @@
-src/fib.o: src/fib.c ../include/trap.h
-../include/trap.h:
+src/fib.o: src/fib.c src/trap.h
+src/trap.h:

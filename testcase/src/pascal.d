@@ -1,2 +1,2 @@
-src/pascal.o: src/pascal.c ../include/trap.h
-../include/trap.h:
+src/pascal.o: src/pascal.c src/trap.h
+src/trap.h:

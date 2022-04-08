@@ -1,2 +1,2 @@
-src/fact.o: src/fact.c ../include/trap.h
-../include/trap.h:
+src/fact.o: src/fact.c src/trap.h
+src/trap.h:
