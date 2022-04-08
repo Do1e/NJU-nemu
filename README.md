@@ -40,36 +40,7 @@ inline uint64_t sign_ext_64(uint32_t x, size_t data_size)
 uint32_t sign_ext(uint32_t x, size_t data_size);
 uint64_t sign_ext_64(uint32_t x, size_t data_size);
 ```
-6. 新建文件CMakeLists.txt，内容如下(可见本工程中的CMakeLists.txt)：
-```cmake
-cmake_minimum_required(VERSION 3.10.2)
-# Project name
-PROJECT(nemu)
-# Head file path
-INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR}/nemu/include ${PROJECT_SOURCE_DIR}/include ${PROJECT_SOURCE_DIR}/libs/nemu-ref/include)
-
-AUX_SOURCE_DIRECTORY(${PROJECT_SOURCE_DIR}/nemu/src NEMU_DIR_SRCS)
-AUX_SOURCE_DIRECTORY(${PROJECT_SOURCE_DIR}/nemu/src/cpu NEMU_DIR_SRCS)
-AUX_SOURCE_DIRECTORY(${PROJECT_SOURCE_DIR}/nemu/src/cpu/decode NEMU_DIR_SRCS)
-AUX_SOURCE_DIRECTORY(${PROJECT_SOURCE_DIR}/nemu/src/cpu/instr NEMU_DIR_SRCS)
-AUX_SOURCE_DIRECTORY(${PROJECT_SOURCE_DIR}/nemu/src/cpu/test NEMU_DIR_SRCS)
-AUX_SOURCE_DIRECTORY(${PROJECT_SOURCE_DIR}/nemu/src/device NEMU_DIR_SRCS)
-AUX_SOURCE_DIRECTORY(${PROJECT_SOURCE_DIR}/nemu/src/device/dev NEMU_DIR_SRCS)
-AUX_SOURCE_DIRECTORY(${PROJECT_SOURCE_DIR}/nemu/src/device/io NEMU_DIR_SRCS)
-AUX_SOURCE_DIRECTORY(${PROJECT_SOURCE_DIR}/nemu/src/memory NEMU_DIR_SRCS)
-AUX_SOURCE_DIRECTORY(${PROJECT_SOURCE_DIR}/nemu/src/memory/mmu NEMU_DIR_SRCS)
-AUX_SOURCE_DIRECTORY(${PROJECT_SOURCE_DIR}/nemu/src/monitor NEMU_DIR_SRCS)
-
-# Set environment variable
-SET(NEMU ${NEMU_DIR_SRCS})
-# Set Compiler，指定编译为32位程序
-SET(CMAKE_C_FLAGS "-m32")
-SET(CMAKE_CXX_FLAGS "-m32")
-
-ADD_EXECUTABLE(nemu ${NEMU})
-set_target_properties(nemu PROPERTIES COMPILE_FLAGS "-m32 -ggdb3 -MP -Wall -Werror -O2" LINK_FLAGS "-m32")
-target_link_libraries(nemu PRIVATE readline SDL ${PROJECT_SOURCE_DIR}/libs/nemu-ref/lib-nemu-ref.a)
-```
+6. 新建文件CMakeLists.txt(见本工程中的CMakeLists.txt)。
 7. 界面左下角改为debug模式。
 ![](https://gitee.com/do1e/file-bed/raw/master/1646617632458.png)
 8. 由于运行需要参数，vs code默认不给参数，因此可根据debug的内容，在`.vscode/settings.json`中加入如下配置(同时保证运行路径的正确)：
