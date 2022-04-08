@@ -72,14 +72,16 @@ target_link_libraries(nemu PRIVATE readline SDL ${PROJECT_SOURCE_DIR}/libs/nemu-
 ```
 7. 界面左下角改为debug模式。
 ![](https://gitee.com/do1e/file-bed/raw/master/1646617632458.png)
-8. 由于运行需要参数，vs code默认不给参数，因此可根据debug的内容，在`.vscode/settings.json`中加入如下配置：
+8. 由于运行需要参数，vs code默认不给参数，因此可根据debug的内容，在`.vscode/settings.json`中加入如下配置(同时保证运行路径的正确)：
 ```json
 {
     "cmake.debugConfig": {
-    "args": [
-        "--test-fpu",
-            "add"
-    ]
+        "args": [
+            "--autorun",
+			"--testcase",
+            "mov-c"
+        ],
+        "cwd": "/home/do1e/PA/NJU-nemu"
     }
 }
 ```
