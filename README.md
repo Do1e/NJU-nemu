@@ -49,10 +49,10 @@ uint64_t sign_ext_64(uint32_t x, size_t data_size);
     "cmake.debugConfig": {
         "args": [
             "--autorun",
-			"--testcase",
-            "mov-c"
+            "--testcase",
+            "fib"
         ],
-        "cwd": "/home/do1e/PA/NJU-nemu"
+        "cwd": "/home/do1e/Arch/OneDrive - njuee/20212大三下/计算机系统基础/PA/NJU-nemu"
     }
 }
 ```
