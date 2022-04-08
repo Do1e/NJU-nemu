@@ -21,7 +21,9 @@ SET(NEMU ${NEMU_DIR_SRCS})
 # Set Compiler，指定编译为32位程序
 SET(CMAKE_C_FLAGS "-m32")
 SET(CMAKE_CXX_FLAGS "-m32")
+set(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -O0")
+set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -O0")
 
 ADD_EXECUTABLE(nemu ${NEMU})
-set_target_properties(nemu PROPERTIES COMPILE_FLAGS "-m32 -ggdb3 -MP -Wall -Werror -O2" LINK_FLAGS "-m32")
+set_target_properties(nemu PROPERTIES COMPILE_FLAGS "-m32 -ggdb3 -MP -Wall -Werror" LINK_FLAGS "-m32")
 target_link_libraries(nemu PRIVATE readline SDL ${PROJECT_SOURCE_DIR}/libs/nemu-ref/lib-nemu-ref.a)
