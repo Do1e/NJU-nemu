@@ -30,5 +30,6 @@ make_instr_func(ret_near_imm16){
 	imm.val = sign_ext(imm.val, 16);
 	cpu.esp += (data_size / 8 + imm.val);
 	cpu.eip = sta.val;
+	print_asm_0("ret", "", 1);
 	return 0;
 }

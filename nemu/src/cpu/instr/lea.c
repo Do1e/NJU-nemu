@@ -12,5 +12,6 @@ make_instr_func(lea)
 	len += modrm_r_rm(eip + 1, &dest, &src);
 	dest.val = src.addr;
 	operand_write(&dest);
+	print_asm_2("lea", "", len, &src, &dest);
 	return len;
 }

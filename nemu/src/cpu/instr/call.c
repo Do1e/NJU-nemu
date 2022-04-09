@@ -19,6 +19,7 @@ make_instr_func(call_near){
 
 	int offset = sign_ext(imm.val, data_size);
 	cpu.eip += offset;
+	print_asm_1("call", "", 1 + data_size / 8, &imm);
 	return data_size / 8 + 1;
 }
 
@@ -43,5 +44,6 @@ make_instr_func(call_near_indirect){
 	operand_read(&dest);
 
 	cpu.eip = rm.val;
+	print_asm_1("call", "", 1 + data_size / 8, &rm);
 	return 0;
 }

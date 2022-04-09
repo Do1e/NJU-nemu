@@ -29,18 +29,3 @@ static void instr_execute_1op_cc_fail() {/* Do nothing */}
 jcc_helper(near)
 jcc_helper(short_)
 make_instr_impl_1op_cc(j, i, short_, ecxz)
-// make_instr_func(je_near)
-// {
-// 	int len = 1;
-// 	opr_src.data_size = opr_dest.data_size = 32;
-// 	opr_src.type = OPR_IMM;
-// 	opr_src.sreg = SREG_CS;
-// 	opr_src.addr = eip + 1;
-// 	len += opr_src.data_size / 8;
-// 	print_asm_1("j", "e", len, &opr_src);
-// 	if (condition_e)
-// 		instr_execute_1op_cc_pass();
-// 	else
-// 		instr_execute_1op_cc_fail();
-// 	return len;
-// }

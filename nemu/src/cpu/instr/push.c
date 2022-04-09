@@ -27,6 +27,7 @@ void PUSHONE(uint32_t data){
 	dest.addr = cpu.esp;
 	dest.val = data;
 	operand_write(&dest);
+	print_asm_1("push", "", 1, &dest);
 }
 
 make_instr_func(pusha){

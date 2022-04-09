@@ -28,6 +28,7 @@ make_instr_func(jmp_far_imm){
     operand_read(&rm);
 
     cpu.eip = rm.val;
+    print_asm_1("jmp", "", 1 + data_size / 8, &rm);
     return 0;
 }
 
@@ -40,6 +41,7 @@ make_instr_func(jmp_short){
     operand_read(&rel);
     int offset = sign_ext(rel.val, 8);
     cpu.eip += offset;
+    print_asm_1("jmp", "", 1 + data_size / 8, &rel);
     return 2;
 }
 
@@ -50,5 +52,6 @@ make_instr_func(jmp_near_indirect){
 
     operand_read(&rel);
     cpu.eip = rel.val;
+    print_asm_1("jmp", "", 1 + data_size / 8, &rel);
     return 0;
 }
