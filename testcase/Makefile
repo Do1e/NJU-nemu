@@ -2,7 +2,7 @@
 
 CC := gcc
 LD := ld
-CFLAGS := -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include
+CFLAGS := -ggdb3 -fcf-protection=none -mmanual-endbr -MMD -MP -Wall -m32 -march=i386 -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include
 
 LDFLAGS := -m elf_i386 -e start -Ttext=0x30000
 #LDFLAGS := -m elf_i386 -e start -Ttext=0x100000
