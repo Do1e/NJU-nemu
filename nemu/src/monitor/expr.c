@@ -23,14 +23,15 @@ enum
 	RSH,  // 262
 	AND,  // 263
 	OR,   // 264
-	NUM,  // 265
-	NUM2, // 266
-	NUM8, // 267
-	NUM16,// 268
-	REG,  // 269
-	REG16,// 270
-	REG8, // 271
-	SYMB  // 272
+	REV,  // 265
+	NUM,  // 266
+	NUM2, // 267
+	NUM8, // 268
+	NUM16,// 269
+	REG,  // 270
+	REG16,// 271
+	REG8, // 272
+	SYMB  // 273
 
 	/* TODO: Add more token types */
 
@@ -71,6 +72,7 @@ static struct rule
 	{"\\|", '|'},
 	{"\\^", '^'},
 	{"!", '!'},
+	{"~", '~'},
 	{"<", '<'},
 	{">", '>'},
 	{"%", '%'},
@@ -176,6 +178,9 @@ static uint32_t check_brackets(int s, int e){
 		}
 		else if(tokens[i].type == ')'){
 			count--;
+		}
+		if(count < 0){
+			return 0;
 		}
 	}
 	return (count == 0);
@@ -301,7 +306,7 @@ uint32_t eval(int s, int e, bool *success){
 		*success = false;
 		return -1;
 	}
-	if(tokens[s].type == '(' && tokens[e].type == ')'){
+	if(tokens[s].type == '(' && tokens[e].type == ')' && check_brackets(s + 1, e - 1) != 0){
 		return eval(s + 1, e - 1, success);
 	}
 	int pos_op = -1, nowLevel = -1;
@@ -317,15 +322,12 @@ uint32_t eval(int s, int e, bool *success){
 					--count;
 			}while(count != 0);
 		}
-		if(nowLevel < 2 && (tokens[i].type == '!')){
+		if(nowLevel < 2 && (tokens[i].type == '!' || tokens[i].type == '~')){
 			pos_op = i;
 			nowLevel = 2;
 			continue;
 		}
-		if(nowLevel < 2 && tokens[i].type == '-' && (tokens[i + 1].type == NUM || tokens[i + 1].type == NUM2 ||
-			tokens[i + 1].type == NUM8 || tokens[i + 1].type == NUM16 || tokens[i + 1].type == SYMB) &&
-			((i <= 0) || (tokens[i - 1].type != NUM && tokens[i - 1].type != NUM2 &&
-			tokens[i - 1].type != NUM8 && tokens[i - 1].type != NUM16 && tokens[i - 1].type != SYMB))){
+		if(nowLevel < 2 && tokens[i].type == '-' && i == s){
 			pos_op = i;
 			nowLevel = 2;
 			continue;
@@ -384,6 +386,10 @@ uint32_t eval(int s, int e, bool *success){
 	switch (tokens[pos_op].type){
 		case '!':{
 			return !eval(pos_op + 1, e, success);
+			break;
+		}
+		case '~':{
+			return ~eval(pos_op + 1, e, success);
 			break;
 		}
 		case '-':{
