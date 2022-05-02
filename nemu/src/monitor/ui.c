@@ -2,6 +2,7 @@
 #include "monitor/ui.h"
 #include "monitor/breakpoint.h"
 #include "cpu/cpu.h"
+#include "memory/memory.h"
 
 #include <stdlib.h>
 #include <readline/readline.h>
@@ -98,7 +99,7 @@ cmd_handler(cmd_p)
 	}
 	//if(args + strspn(args, " ") >= cmd_end) { goto p_error; }
 
-	bool success;
+	bool success = true;
 	uint32_t val = expr(args, &success);
 	if (!success)
 	{
@@ -220,6 +221,92 @@ cmd_handler(cmd_d)
 
 cmd_handler(cmd_help);
 
+cmd_handler(cmd_x)
+{
+	if(args == NULL)
+	{
+		puts("Command format: \"x N b/h/w EXPR\"");
+		return 0;
+	}
+	bool success;
+	char arg[32];
+	uint32_t addr, N, val;
+	char c;
+	if(sscanf(args, "%d%c %s", &N, &c, arg) != 3)
+	{
+		printf("invalid expression: '%s'\n", args);
+		return 0;
+	}
+	addr = expr(arg, &success);
+	if(!success)
+	{
+		printf("invalid expression: '%s'\n", args);
+	}
+	else
+	{
+		int item = 0;
+		switch (c)
+		{
+		case 'b':
+			for(int i = 0; i < N; i++)
+			{
+				val = vaddr_read(addr + i, SREG_CS, 1);
+				if(item % 4 == 0)
+				{
+					printf("\033[34m0x%08x:\033[0m    ", addr + i);
+				}
+				printf("0x%02x  ", val);
+				if(item % 4 == 3)
+				{
+					printf("\n");
+				}
+				item++;
+			}
+			break;
+		case 'h':
+			for(int i = 0; i < 2*N; i+=2)
+			{
+				val = vaddr_read(addr + i, SREG_CS, 2);
+				if(item % 4 == 0)
+				{
+					printf("\033[34m0x%08x:\033[0m    ", addr + i);
+				}
+				printf("0x%04x  ", val);
+				if(item % 4 == 3)
+				{
+					printf("\n");
+				}
+				item++;
+			}
+			break;
+		case 'w':
+			for(int i = 0; i < 4*N; i+=4)
+			{
+				val = vaddr_read(addr + i, SREG_CS, 4);
+				if(item % 4 == 0)
+				{
+					printf("\033[34m0x%08x:\033[0m    ", addr + i);
+				}
+				printf("0x%08x  ", val);
+				if(item % 4 == 3)
+				{
+					printf("\n");
+				}
+				item++;
+			}
+			break;
+		default:
+			printf("invalid expression: '%s'\n", args);
+			break;
+		}
+		if(item % 4 != 0)
+		{
+			printf("\n");
+		}
+	}
+	return 0;
+}
+
 static struct
 {
 	char *name;
@@ -227,6 +314,7 @@ static struct
 	int (*handler)(char *);
 } cmd_table[] = {
 	{"help", "Display informations about all supported commands", cmd_help},
+	{"h", "Display informations about all supported commands", cmd_help},
 	{"c", "Continue the execution of the program", cmd_c},
 	{"q", "Exit NEMU", cmd_q},
 	{"p", "Evaluate an expression", cmd_p},
@@ -238,6 +326,8 @@ static struct
 	/* TODO: Add more commands */
 	{"si", "Single Step Execution", cmd_si},
 	{"info", "Print register and watch point info", cmd_info},
+	{"i", "Print register and watch point info", cmd_info},
+	{"x", "Print the contents in memory", cmd_x},
 
 };
 

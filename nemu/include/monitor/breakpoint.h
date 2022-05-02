@@ -54,6 +54,9 @@ int set_watchpoint(char *e);
 BP *scan_watchpoint();
 
 void load_elf_tables(const char *);
+uint32_t look_up_fun_symtab(char *sym, bool *success);
+uint32_t look_up_symtab(char *sym, bool *success);
+const char *find_fun_name(uint32_t eip);
 void init_regex();
 void init_bp_list();
 
