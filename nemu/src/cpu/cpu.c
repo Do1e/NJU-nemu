@@ -109,6 +109,12 @@ void exec(uint32_t n)
 		do_intr();
 #endif
 	}
+#ifdef CACHE_ENABLED
+	extern int cache_hit, cache_miss;
+	printf("\033[33mcache hit: %d, cache miss: %d\033[0m\n", cache_hit, cache_miss);
+	printf("\033[33mcache hit rate: %f%%\033[0m\n", (float)cache_hit / (cache_hit + cache_miss) * 100);
+	printf("\033[33msimulation time with cache: %d, without cache: %d\033[0m\n", cache_hit + cache_miss * 10, (cache_hit + cache_miss) * 5);
+#endif
 	if (nemu_state == NEMU_STOP)
 	{
 		printf("NEMU2 terminated\n");
@@ -127,7 +133,7 @@ int exec_inst()
 	uint8_t opcode = 0;
 	// get the opcode
 	opcode = instr_fetch(cpu.eip, 1);
-	// printf("opcode = %02x, eip = 0x%x\n", opcode, cpu.eip);
+	// printf("opcode = %02x, eip = 0x%x, cnt = %d\n", opcode, cpu.eip, cnt++);
 	// for(int i = cpu.eip; i < cpu.eip + 15; ++i){
 	// 	printf("%02x ", instr_fetch(i, 1));
 	// }printf("\n");
@@ -135,7 +141,6 @@ int exec_inst()
 #ifdef NEMU_REF_INSTR
 	int len = __ref_opcode_entry[opcode](cpu.eip, opcode);
 #else
-	// ++cnt;
 	int len = opcode_entry[opcode](cpu.eip, opcode);
 #endif
 	return len;

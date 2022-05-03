@@ -5,6 +5,13 @@
 
 #ifdef CACHE_ENABLED
 
+#define CACHE_BLOCK 6
+#define CACHE_BLOCK_SIZE (1 << CACHE_BLOCK)
+#define CACHE_GROUP 3
+#define CACHE_GROUP_SIZE (1 << CACHE_GROUP)
+#define CACHE_SET 7
+#define CACHE_SET_SIZE (1 << CACHE_SET)
+
 // init the cache
 void init_cache();
 
