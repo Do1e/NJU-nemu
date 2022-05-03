@@ -1,3 +1,6 @@
+// 测试cache的跨行读写功能
+// 191180028 刁培杰
+
 # include "trap.h"
 # define N 8
 int test_int[N] = {0, 1, 2, 0x7fffffff, 0x80000000, 0x80000001, 0xfffffffe, 0xffffffff};
@@ -12,8 +15,6 @@ struct ans_struct{
 	short s;
 	int i;
 }__attribute__ ((packed));
-
-
 
 int main(){
 	int i, j, ans_idx = 0;
