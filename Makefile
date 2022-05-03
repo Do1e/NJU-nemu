@@ -174,6 +174,7 @@ test_batch-2-2-mute:
 	./nemu/nemu --autorun --testcase shuixianhua --kernel
 	./nemu/nemu --autorun --testcase sum --kernel
 	./nemu/nemu --autorun --testcase wanshu --kernel
+	./nemu/nemu --autorun --testcase liushiyi --kernel
 	./nemu/nemu --autorun --testcase struct --kernel
 	./nemu/nemu --autorun --testcase string --kernel
 	./nemu/nemu --autorun --testcase hello-str  --kernel
