@@ -45,6 +45,7 @@ void cache_write(paddr_t paddr, size_t len, uint32_t data)
 	bool hit = false;
 	for(int i = 0; i < CACHE_GROUP_SIZE; ++i){
 		if(cache[grpID].cache_group[i].valid_bit != 0 && cache[grpID].cache_group[i].tag == tag){
+			++cache_hit;
 			hit = true;
 			if(cachePos + len <= CACHE_BLOCK_SIZE){  // 不跨行
 				memcpy(cache[grpID].cache_group[i].data + cachePos, &data, len);
@@ -64,6 +65,7 @@ void cache_write(paddr_t paddr, size_t len, uint32_t data)
 		}
 	}
 	if(!hit){
+		++cache_miss;
 		hw_mem_write(paddr, len, data);
 	}
 }
