@@ -1,3 +1,4 @@
 build/*
 .cache/*
 scripts/.single_exec_res
+.sync.ffs_db
