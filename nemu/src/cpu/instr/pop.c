@@ -17,7 +17,7 @@ make_instr_func(pop_r_v){
 	operand_write(&dest);
 
 	cpu.esp += data_size / 8;
-	print_asm_1("pop", "", 1, &src);
+	print_asm_1("pop", opr_src.data_size == 8 ? "b" : (opr_src.data_size == 16 ? "w" : "l"), 1, &dest);
 	return 1;
 }
 
@@ -29,7 +29,7 @@ void POPONE(uint32_t *data){
 	operand_read(&src);
 	*data = src.val;
 	cpu.esp += data_size / 8;
-	print_asm_1("pop", "", 1, &src);
+	// print_asm_1("pop", opr_src.data_size == 8 ? "b" : (opr_src.data_size == 16 ? "w" : "l"), 1, &src);
 }
 
 make_instr_func(popa){
