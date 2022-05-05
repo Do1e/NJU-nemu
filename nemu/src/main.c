@@ -116,6 +116,7 @@ bool parse_args(int argc, char *argv[]);
 
 int main(int argc, char *argv[])
 {
+
 	if (!parse_args(argc, argv))
 	{ // parse the arguments
 		printf("NEMU exit with argment parse error\n");
