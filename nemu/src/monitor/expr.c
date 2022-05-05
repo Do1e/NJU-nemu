@@ -322,7 +322,7 @@ uint32_t eval(int s, int e, bool *success){
 					--count;
 			}while(count != 0);
 		}
-		if(nowLevel <= 2 && (tokens[i].type == '!' || tokens[i].type == '~')){
+		if(nowLevel < 2 && (tokens[i].type == '!' || tokens[i].type == '~')){
 			pos_op = i;
 			nowLevel = 2;
 			continue;
