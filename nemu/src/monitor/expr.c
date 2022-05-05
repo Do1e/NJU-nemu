@@ -322,62 +322,62 @@ uint32_t eval(int s, int e, bool *success){
 					--count;
 			}while(count != 0);
 		}
-		if(nowLevel < 2 && (tokens[i].type == '!' || tokens[i].type == '~')){
+		if(nowLevel <= 2 && (tokens[i].type == '!' || tokens[i].type == '~')){
 			pos_op = i;
 			nowLevel = 2;
 			continue;
 		}
-		if(nowLevel < 2 && tokens[i].type == '-' && i == s){
+		if(nowLevel <= 2 && tokens[i].type == '-' && i == s){
 			pos_op = i;
 			nowLevel = 2;
 			continue;
 		}
-		if(nowLevel < 3 && (tokens[i].type == '*' || tokens[i].type == '/' || tokens[i].type == '%')){
+		if(nowLevel <= 3 && (tokens[i].type == '*' || tokens[i].type == '/' || tokens[i].type == '%')){
 			pos_op = i;
 			nowLevel = 3;
 			continue;
 		}
-		if(nowLevel < 4 && (tokens[i].type == '+' || tokens[i].type == '-')){
+		if(nowLevel <= 4 && (tokens[i].type == '+' || tokens[i].type == '-')){
 			pos_op = i;
 			nowLevel = 4;
 			continue;
 		}
-		if(nowLevel < 5 && (tokens[i].type == LSH || tokens[i].type == RSH)){
+		if(nowLevel <= 5 && (tokens[i].type == LSH || tokens[i].type == RSH)){
 			pos_op = i;
 			nowLevel = 5;
 			continue;
 		}
-		if(nowLevel < 6 && (tokens[i].type == '>' || tokens[i].type == '<' || tokens[i].type == GEQ || tokens[i].type == LEQ)){
+		if(nowLevel <= 6 && (tokens[i].type == '>' || tokens[i].type == '<' || tokens[i].type == GEQ || tokens[i].type == LEQ)){
 			pos_op = i;
 			nowLevel = 6;
 			continue;
 		}
-		if(nowLevel < 7 && (tokens[i].type == EQ || tokens[i].type == UEQ)){
+		if(nowLevel <= 7 && (tokens[i].type == EQ || tokens[i].type == UEQ)){
 			pos_op = i;
 			nowLevel = 7;
 			continue;
 		}
-		if(nowLevel < 8 && (tokens[i].type == '&')){
+		if(nowLevel <= 8 && (tokens[i].type == '&')){
 			pos_op = i;
 			nowLevel = 8;
 			continue;
 		}
-		if(nowLevel < 9 && (tokens[i].type == '^')){
+		if(nowLevel <= 9 && (tokens[i].type == '^')){
 			pos_op = i;
 			nowLevel = 9;
 			continue;
 		}
-		if(nowLevel < 10 && (tokens[i].type == '|')){
+		if(nowLevel <= 10 && (tokens[i].type == '|')){
 			pos_op = i;
 			nowLevel = 10;
 			continue;
 		}
-		if(nowLevel < 11 && (tokens[i].type == AND)){
+		if(nowLevel <= 11 && (tokens[i].type == AND)){
 			pos_op = i;
 			nowLevel = 11;
 			continue;
 		}
-		if(nowLevel < 12 && (tokens[i].type == OR)){
+		if(nowLevel <= 12 && (tokens[i].type == OR)){
 			pos_op = i;
 			nowLevel = 12;
 			continue;
