@@ -332,6 +332,11 @@ uint32_t eval(int s, int e, bool *success){
 			nowLevel = 2;
 			continue;
 		}
+		if(nowLevel < 2 && tokens[i].type == '*' && i == s){
+			pos_op = i;
+			nowLevel = 2;
+			continue;
+		}
 		if(nowLevel <= 3 && (tokens[i].type == '*' || tokens[i].type == '/' || tokens[i].type == '%')){
 			pos_op = i;
 			nowLevel = 3;
@@ -399,7 +404,9 @@ uint32_t eval(int s, int e, bool *success){
 			break;
 		}
 		case '*':{
-			return eval(s, pos_op - 1, success) * eval(pos_op + 1, e, success);
+			if(nowLevel == 2){
+				return vaddr_read(eval(pos_op + 1, e, success), SREG_CS, 4);
+			}else return eval(s, pos_op - 1, success) * eval(pos_op + 1, e, success);
 			break;
 		}
 		case '/':{
