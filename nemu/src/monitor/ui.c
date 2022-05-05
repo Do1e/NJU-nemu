@@ -225,10 +225,10 @@ cmd_handler(cmd_x)
 {
 	if(args == NULL)
 	{
-		puts("Command format: \"x N b/h/w EXPR\"");
+		puts("Command format: \"x Nb/h/w EXPR\"");
 		return 0;
 	}
-	bool success;
+	bool success = true;
 	char arg[32];
 	uint32_t addr, N, val;
 	char c;
