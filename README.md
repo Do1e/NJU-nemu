@@ -62,4 +62,5 @@ uint64_t sign_ext_64(uint32_t x, size_t data_size);
 10. 快乐地debug或者run吧。
 ![](https://gitee.com/do1e/file-bed/raw/master/1646617661458.png)
 
-**注：由于不同编译器对未定义行为的操作可能不同，强烈建议结果不对且没发现明显错误时，在PA平台上测试一次。正确的话可以更改`\*_test.c`跳过该测试用例。比如PA1-3中便有不同编译器对nan的解释不同。我选择的编译器为clang，gcc遇到过怪问题。**
+**注1：由于不同编译器对未定义行为的操作可能不同，强烈建议结果不对且没发现明显错误时，在PA平台上测试一次。正确的话可以更改`\*_test.c`跳过该测试用例。比如PA1-3中便有不同编译器对nan的解释不同。我选择的编译器为clang，gcc遇到过怪问题。**  
+注2：kernel中的CMakeLists.txt并不能编译kernel，只用作kernel代码高亮。
