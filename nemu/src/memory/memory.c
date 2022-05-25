@@ -54,12 +54,22 @@ void laddr_write(laddr_t laddr, size_t len, uint32_t data)
 uint32_t vaddr_read(vaddr_t vaddr, uint8_t sreg, size_t len)
 {
 	assert(len == 1 || len == 2 || len == 4);
+#ifdef IA32_SEG
+	if(cpu.cr0.pe){
+		vaddr = segment_translate(vaddr, sreg);
+	}
+#endif
 	return laddr_read(vaddr, len);
 }
 
 void vaddr_write(vaddr_t vaddr, uint8_t sreg, size_t len, uint32_t data)
 {
 	assert(len == 1 || len == 2 || len == 4);
+#ifdef IA32_SEG
+	if(cpu.cr0.pe){
+		vaddr = segment_translate(vaddr, sreg);
+	}
+#endif
 	laddr_write(vaddr, len, data);
 }
 

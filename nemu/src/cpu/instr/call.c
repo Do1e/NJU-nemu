@@ -8,6 +8,7 @@ make_instr_func(call_near){
 	imm.type = OPR_IMM;
 	imm.data_size = data_size;
 	imm.addr = eip + 1;
+	imm.sreg = SREG_CS;
 	operand_read(&imm);
 
 	dest.type = OPR_MEM;
@@ -15,6 +16,7 @@ make_instr_func(call_near){
 	cpu.esp -= data_size / 8;
 	dest.addr = cpu.esp;
 	dest.val = cpu.eip + data_size / 8 + 1;
+	dest.sreg = SREG_SS;
 	operand_write(&dest);
 
 	int offset = sign_ext(imm.val, data_size);
@@ -41,6 +43,7 @@ make_instr_func(call_near_indirect){
 	dest.type = OPR_MEM;
 	dest.addr = esp.val;
 	dest.val = cpu.eip + len;
+	dest.sreg = SREG_CS;
 	operand_read(&dest);
 
 	cpu.eip = rm.val;

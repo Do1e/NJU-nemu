@@ -3,3 +3,5 @@ build/*
 scripts/.single_exec_res
 .sync.ffs_db
 .vscode/*
+*.o
+*.d

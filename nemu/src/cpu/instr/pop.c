@@ -8,12 +8,14 @@ make_instr_func(pop_r_v){
 	src.data_size = data_size;
 	src.type = OPR_MEM;
 	src.addr = cpu.esp;
+	src.sreg = SREG_SS;
 	operand_read(&src);
 
 	dest.data_size = data_size;
 	dest.type = OPR_REG;
 	dest.addr = opcode & 0x7;
 	dest.val = src.val;
+	dest.sreg = SREG_SS;
 	operand_write(&dest);
 
 	cpu.esp += data_size / 8;

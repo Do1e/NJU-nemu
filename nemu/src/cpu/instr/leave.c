@@ -9,6 +9,7 @@ make_instr_func(leave){
 	dest.type = OPR_MEM;
 	dest.addr = cpu.ebp;
 	dest.data_size = data_size;
+	dest.sreg = SREG_SS;
 
 	operand_read(&dest);
 

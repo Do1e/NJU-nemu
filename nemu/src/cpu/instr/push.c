@@ -11,6 +11,7 @@ static void instr_execute_1op(){
 	dest.type = OPR_MEM;
 	dest.addr = cpu.esp;
 	dest.val = opr_src.val;
+	dest.sreg = SREG_SS;
 	operand_write(&dest);
 }
 
@@ -26,6 +27,7 @@ void PUSHONE(uint32_t data){
 	dest.type = OPR_MEM;
 	dest.addr = cpu.esp;
 	dest.val = data;
+	dest.sreg = SREG_SS;
 	operand_write(&dest);
 	print_asm_1("push", "", 1, &dest);
 }

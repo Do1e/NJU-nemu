@@ -9,6 +9,7 @@ make_instr_func(ret_near){
 	sta.type = OPR_MEM;
 	sta.data_size = data_size;
 	sta.addr = cpu.esp;
+	sta.sreg = SREG_SS;
 	operand_read(&sta);
 	cpu.esp += data_size / 8;
 	cpu.eip = sta.val;
@@ -21,11 +22,13 @@ make_instr_func(ret_near_imm16){
 	imm.type = OPR_IMM;
 	imm.data_size = 16;
 	imm.addr = eip + 1;
+	imm.sreg = SREG_SS;
 	operand_read(&imm);
 
 	sta.type = OPR_MEM;
 	sta.data_size = data_size;
 	sta.addr = cpu.esp;
+	sta.sreg = SREG_SS;
 	operand_read(&sta);
 
 	imm.val = sign_ext(imm.val, 16);
