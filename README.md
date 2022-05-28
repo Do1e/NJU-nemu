@@ -6,7 +6,9 @@
 3. nemu/src/cpu/fpu.c的第4行或者nemu/src/cpu/cpu.c的第11行都有`FPU fpu`，删除其中一个，我删除的是cpu.c里的。
 4. 若要使用老师提供的nemu/Makefile，在`CFLAGS`和`LDFLAGS`后面加上` -m32`。
 5. 推荐使用cmake，在Linux下安装cmake，在VS Code中安装cmake、C/C++插件。
-![](https://gitee.com/do1e/file-bed/raw/master/1649419898427.png)
+
+![](https://s3.bmp.ovh/imgs/2022/05/28/4e048934246380d4.png)
+
 6. 将nemu/include/cpu/alu.h中的
 ```c
 inline uint32_t sign_ext(uint32_t x, size_t data_size)
@@ -44,7 +46,9 @@ uint64_t sign_ext_64(uint32_t x, size_t data_size);
 ```
 7. 新建文件CMakeLists.txt(见本工程中的CMakeLists.txt)。
 8. 界面左下角改为debug模式。
-![](https://gitee.com/do1e/file-bed/raw/master/1646617632458.png)
+
+![](https://s3.bmp.ovh/imgs/2022/05/28/6332d67634704de1.png)
+
 9. 由于运行需要参数，vs code默认不给参数，因此可根据debug的内容，在`.vscode/settings.json`中加入如下配置(同时保证运行路径的正确)：
 ```json
 {
@@ -60,7 +64,8 @@ uint64_t sign_ext_64(uint32_t x, size_t data_size);
 ```
 
 10. 快乐地debug或者run吧。
-![](https://gitee.com/do1e/file-bed/raw/master/1646617661458.png)
+
+![](https://s3.bmp.ovh/imgs/2022/05/28/85119b27e4d72ae6.png)
 
 **注1：由于不同编译器对未定义行为的操作可能不同，强烈建议结果不对且没发现明显错误时，在PA平台上测试一次。正确的话可以更改`\*_test.c`跳过该测试用例。比如PA1-3中便有不同编译器对nan的解释不同。我选择的编译器为clang，gcc遇到过怪问题。**  
 注2：kernel中的CMakeLists.txt并不能编译kernel，只用作kernel代码高亮。
