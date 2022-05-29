@@ -17,6 +17,7 @@ uint32_t hw_mem_read(paddr_t paddr, size_t len)
 
 void hw_mem_write(paddr_t paddr, size_t len, uint32_t data)
 {
+	assert(paddr + len <= MEM_SIZE_B && paddr >= 0);
 	memcpy(hw_mem + paddr, &data, len);
 }
 
@@ -34,6 +35,7 @@ uint32_t paddr_read(paddr_t paddr, size_t len)
 
 void paddr_write(paddr_t paddr, size_t len, uint32_t data)
 {
+	assert(paddr + len <= MEM_SIZE_B && paddr >= 0);
 #ifdef CACHE_ENABLED
 	cache_write(paddr, len, data);
 #else
