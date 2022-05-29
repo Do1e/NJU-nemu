@@ -1,6 +1,0 @@
-{
-	"files.associations": {
-		"*.m": "matlab",
-		"trap.h": "c"
-	}
-}
