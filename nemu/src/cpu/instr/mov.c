@@ -120,5 +120,6 @@ make_instr_func(mov_r2c_l){
     c.val = r.val;
     c.type = OPR_CREG;
     operand_write(&c);
+    print_asm_2("mov", "", len, &r, &c);
     return len;
 }
