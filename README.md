@@ -68,4 +68,5 @@ uint64_t sign_ext_64(uint32_t x, size_t data_size);
 ![](https://s3.bmp.ovh/imgs/2022/05/28/85119b27e4d72ae6.png)
 
 **注1：由于不同编译器对未定义行为的操作可能不同，强烈建议结果不对且没发现明显错误时，在PA平台上测试一次。正确的话可以更改`\*_test.c`跳过该测试用例。比如PA1-3中便有不同编译器对nan的解释不同。我选择的编译器为clang，gcc遇到过怪问题。**  
-注2：kernel中的CMakeLists.txt并不能编译kernel，只用作kernel代码高亮。
+注2：kernel中的CMakeLists.txt并不能编译kernel，只用作kernel代码高亮。   
+注3：强烈建议kernel使用平台编译，本地编译容易出现问题。
