@@ -46,7 +46,7 @@ void paddr_write(paddr_t paddr, size_t len, uint32_t data)
 uint32_t laddr_read(laddr_t laddr, size_t len)
 {
 #ifdef IA32_PAGE
-	if(cpu.cr0.pg){
+	if(cpu.cr0.pg && cpu.cr0.pe){
 		if((laddr >> PAGE_OFFSET_BIT) != ((laddr + len - 1) >> PAGE_OFFSET_BIT)){ //cross page
 			uint32_t left = (laddr & PAGE_OFFSET_MASK) + len - PAGE_OFFSET_MASK - 1;
 			uint32_t already = len - left;
@@ -67,7 +67,7 @@ uint32_t laddr_read(laddr_t laddr, size_t len)
 void laddr_write(laddr_t laddr, size_t len, uint32_t data)
 {
 #ifdef IA32_PAGE
-	if(cpu.cr0.pg){
+	if(cpu.cr0.pg && cpu.cr0.pe){
 		if((laddr >> PAGE_OFFSET_BIT) != ((laddr + len - 1) >> PAGE_OFFSET_BIT)){ //cross page
 			uint32_t left = (laddr & PAGE_OFFSET_MASK) + len - PAGE_OFFSET_MASK - 1;
 			uint32_t already = len - left;
