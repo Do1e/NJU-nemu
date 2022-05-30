@@ -12,8 +12,8 @@ make_instr_func(ret_near){
 	sta.sreg = SREG_SS;
 	operand_read(&sta);
 	cpu.esp += data_size / 8;
-	cpu.eip = sta.val;
 	print_asm_0("ret", "", 1);
+	cpu.eip = sta.val;
 	return 0;
 }
 
