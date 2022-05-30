@@ -10,6 +10,12 @@
 #define PD_SIZE ((NR_PTE) * (PAGE_SIZE))
 
 #define PAGE_MASK (PAGE_SIZE - 1)
+#define PAGE_DIR_BIT 10
+#define PAGE_PAGE_BIT 12
+#define PAGE_OFFSET_BIT 12
+#define PAGE_DIR_MASK ((1 << PAGE_DIR_BIT) - 1)
+#define PAGE_PAGE_MASK ((1 << PAGE_PAGE_BIT) - 1)
+#define PAGE_OFFSET_MASK ((1 << PAGE_OFFSET_BIT) - 1)
 
 /* force the data to be aligned with page boundary.
    statically defined page tables uses this feature. */

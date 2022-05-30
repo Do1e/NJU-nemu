@@ -45,12 +45,43 @@ void paddr_write(paddr_t paddr, size_t len, uint32_t data)
 
 uint32_t laddr_read(laddr_t laddr, size_t len)
 {
+#ifdef IA32_PAGE
+	if(cpu.cr0.pg){
+		if((laddr >> PAGE_OFFSET_BIT) != ((laddr + len - 1) >> PAGE_OFFSET_BIT)){ //cross page
+			uint32_t left = (laddr & PAGE_OFFSET_MASK) + len - PAGE_OFFSET_MASK - 1;
+			uint32_t already = len - left;
+			uint32_t res1 = paddr_read(page_translate(laddr), already);
+			uint32_t res2 = paddr_read(page_translate(laddr + already), left);
+			return res1 | (res2 << (already * 8));
+		}else{
+			return paddr_read(page_translate(laddr), len);
+		}
+	}else{
+		return paddr_read(laddr, len);
+	}
+#else
 	return paddr_read(laddr, len);
+#endif
 }
 
 void laddr_write(laddr_t laddr, size_t len, uint32_t data)
 {
+#ifdef IA32_PAGE
+	if(cpu.cr0.pg){
+		if((laddr >> PAGE_OFFSET_BIT) != ((laddr + len - 1) >> PAGE_OFFSET_BIT)){ //cross page
+			uint32_t left = (laddr & PAGE_OFFSET_MASK) + len - PAGE_OFFSET_MASK - 1;
+			uint32_t already = len - left;
+			paddr_write(page_translate(laddr), already, data & ((1 << (already * 8)) - 1));
+			paddr_write(page_translate(laddr + already), left, data >> (already * 8));
+		}else{
+			paddr_write(page_translate(laddr), len, data);
+		}
+	}else{
+		paddr_write(laddr, len, data);
+	}
+#else
 	paddr_write(laddr, len, data);
+#endif
 }
 
 uint32_t vaddr_read(vaddr_t vaddr, uint8_t sreg, size_t len)
