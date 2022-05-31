@@ -39,7 +39,9 @@ uint32_t loader()
 
 			// remove this panic!!!
 			// panic("Please implement the loader");
-
+#ifdef IA32_PAGE
+			ph->p_paddr = mm_malloc(ph->p_vaddr, ph->p_memsz);
+#endif
             /* copy the segment from the ELF file to its proper memory area */
             memcpy((void *)ph->p_paddr, (void *)elf + ph->p_offset, ph->p_filesz);
             /* zeror the memory area [vaddr + file_sz, vaddr + mem_sz) */
