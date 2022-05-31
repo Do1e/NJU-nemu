@@ -18,7 +18,7 @@ make_instr_func(stos_b)
 	incDec = cpu.eflags.DF == 0 ? 1 : -1;
 	cpu.gpr[REG_EDI]._32 += incDec;
 	operand_write(&mdi);
-	// print_asm_0("stos", "", 1);
+	print_asm_0("stos", "", 1);
 	return 1;
 }
 
@@ -40,6 +40,6 @@ make_instr_func(stos_v)
 	incDec = cpu.eflags.DF == 0 ? data_size / 8 : -data_size / 8;
 	cpu.gpr[REG_EDI]._32 += incDec;
 	operand_write(&mdi);
-	// print_asm_0("stos", "", 1);
+	print_asm_0("stos", "", 1);
 	return 1;
 }
