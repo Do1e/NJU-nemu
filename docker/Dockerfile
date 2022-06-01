@@ -7,3 +7,13 @@ RUN pacman -S vim gcc gdb clang cmake make git --noconfirm
 RUN pacman -S glibc lib32-glibc sdl lib32-sdl readline lib32-readline --noconfirm
 RUN pacman -S openssh --noconfirm
 RUN systemctl enable sshd
+RUN pacman-key --init
+RUN pacman-key -r F9F9FA97A403F63E
+RUN pacman-key -f F9F9FA97A403F63E
+RUN pacman-key --lsign-key F9F9FA97A403F63E
+RUN gpg --keyserver keys.gnupg.net --recv-keys F9F9FA97A403F63E
+RUN gpg --keyserver keys.gnupg.net --recv-keys 6C35B99309B5FA62
+RUN pacman -S yaourt --noconfirm
+RUN pacman -S base-devel --noconfirm
+RUN sed -i '1189,1201d' /usr/bin/makepkg
+RUN yaourt -S gcc8 gcc8-libs gcc8-fortran --noconfirm
