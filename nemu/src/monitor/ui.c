@@ -193,7 +193,8 @@ cmd_handler(cmd_d)
 		while (1)
 		{
 			printf("Deleta all breakpoints? (y or n)");
-			scanf("%c", &c);
+			int size = scanf("%c", &c);
+			assert(size >= 0);
 			switch (c)
 			{
 			case 'y':

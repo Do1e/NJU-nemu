@@ -82,7 +82,8 @@ make_pio_handler(handler_ide)
 		{
 			/* read 4 bytes data from disk */
 			assert(!ide_write);
-			fread(&buf, 4, 1, disk_fp);
+			size_t size = fread(&buf, 4, 1, disk_fp);
+			assert(size >= 0);
 			write_io_port(IDE_PORT_BASE, 4, buf);
 
 			byte_cnt += 4;

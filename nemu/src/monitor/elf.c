@@ -17,7 +17,8 @@ void load_elf_tables(char *exec_file)
 	uint8_t buf[4096];
 	/* Read the first 4096 bytes from the exec_file.
 	 * They should contain the ELF header and program headers. */
-	fread(buf, 4096, 1, fp);
+	size_t size = fread(buf, 4096, 1, fp);
+	assert(size >= 0);
 
 	/* The first several bytes contain the ELF header. */
 	Elf32_Ehdr *elf = (void *)buf;
@@ -41,12 +42,14 @@ void load_elf_tables(char *exec_file)
 	uint32_t sh_size = elf->e_shentsize * elf->e_shnum;
 	Elf32_Shdr *sh = malloc(sh_size);
 	fseek(fp, elf->e_shoff, SEEK_SET);
-	fread(sh, sh_size, 1, fp);
+	size = fread(sh, sh_size, 1, fp);
+	assert(size >= 0);
 
 	/* Load section header string table */
 	char *shstrtab = malloc(sh[elf->e_shstrndx].sh_size);
 	fseek(fp, sh[elf->e_shstrndx].sh_offset, SEEK_SET);
-	fread(shstrtab, sh[elf->e_shstrndx].sh_size, 1, fp);
+	size = fread(shstrtab, sh[elf->e_shstrndx].sh_size, 1, fp);
+	assert(size >= 0);
 
 	int i;
 	for (i = 0; i < elf->e_shnum; i++)
@@ -57,7 +60,8 @@ void load_elf_tables(char *exec_file)
 			/* Load symbol table from exec_file */
 			symtab = malloc(sh[i].sh_size);
 			fseek(fp, sh[i].sh_offset, SEEK_SET);
-			fread(symtab, sh[i].sh_size, 1, fp);
+			size = fread(symtab, sh[i].sh_size, 1, fp);
+			assert(size >= 0);
 			nr_symtab_entry = sh[i].sh_size / sizeof(symtab[0]);
 		}
 		else if (sh[i].sh_type == SHT_STRTAB &&
@@ -66,7 +70,8 @@ void load_elf_tables(char *exec_file)
 			/* Load string table from exec_file */
 			strtab = malloc(sh[i].sh_size);
 			fseek(fp, sh[i].sh_offset, SEEK_SET);
-			fread(strtab, sh[i].sh_size, 1, fp);
+			size = fread(strtab, sh[i].sh_size, 1, fp);
+			assert(size >= 0);
 		}
 	}
 
