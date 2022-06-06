@@ -1,8 +1,8 @@
 LIB_COMMON_DIR = ../libs
 NEWLIBC_DIR = $(LIB_COMMON_DIR)/newlib
 
-CC = gcc-8
-CFLAGS = -m32 -MMD -Wall -Werror -march=i386 -fno-builtin -fno-omit-frame-pointer -fno-stack-protector -I./include -I../include -I$(NEWLIBC_DIR)/include -m32
+CC = gcc
+CFLAGS = -m32 -MMD -fcf-protection=none -mmanual-endbr -Wall -Werror -march=i386 -fno-builtin -fno-omit-frame-pointer -fno-stack-protector -I./include -I../include -I$(NEWLIBC_DIR)/include -m32
 ASFLAGS = -m32 -MMD -I./include -I../include
 #LDFLAGS = -Ttext=0x30000 -m elf_i386 # before page
 LDFLAGS = -Ttext=0xc0030000 -m elf_i386 
