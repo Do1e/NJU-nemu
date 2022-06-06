@@ -16,7 +16,7 @@ RUN gpg --keyserver keys.gnupg.net --recv-keys 6C35B99309B5FA62
 RUN pacman -S yaourt --noconfirm
 RUN pacman -S base-devel --noconfirm
 RUN sed -i '1189,1201d' /usr/bin/makepkg
-RUN yaourt -S gcc8 --noconfirm
+# RUN yaourt -S gcc8 --noconfirm
 RUN pacman -S zsh --noconfirm
 RUN yaourt -S zsh-theme-powerlevel10k --noconfirm
 RUN yaourt -S zsh-autosuggestions --noconfirm
