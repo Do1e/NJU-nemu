@@ -1,4 +1,9 @@
 # 2022NJU计算机系统基础课程PA
+
+<center>
+<a href="https://wakatime.com/badge/user/d2554b48-8dde-4338-baba-1882d2f860ec/project/10f97437-7695-4cd9-80f4-295efe7b90d9"><img src="https://wakatime.com/badge/user/d2554b48-8dde-4338-baba-1882d2f860ec/project/10f97437-7695-4cd9-80f4-295efe7b90d9.svg" alt="wakatime"></a>
+</center>
+
 * 本代码仅供参考，请遵守`LICENSE`，请勿抄袭。
 ## 如何将提供的代码拷贝到自己的Linux运行（以下步骤仅供参考）
 1. Linux安装32位支持库、libsdl1.2-dev等支持库（可自行百度）。
