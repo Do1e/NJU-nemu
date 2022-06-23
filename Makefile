@@ -6,7 +6,7 @@ Submit_Script = scripts/submit
 nemu: 
 	cd nemu && make
 	cd testcase && make
-	cd kernel && make
+	# cd kernel && make
 
 run: nemu
 	./nemu/nemu --testcase add
@@ -24,7 +24,7 @@ clean:
 	cd nemu && make clean
 	cd game && make clean
 	cd testcase && make clean
-	cd kernel && make clean
+	# cd kernel && make clean
 
 # local tests to different stages of PA
 
