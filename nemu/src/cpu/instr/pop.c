@@ -31,14 +31,15 @@ void POPONE(uint32_t *data){
 	operand_read(&src);
 	*data = src.val;
 	cpu.esp += data_size / 8;
-	// print_asm_1("pop", opr_src.data_size == 8 ? "b" : (opr_src.data_size == 16 ? "w" : "l"), 1, &src);
+	print_asm_1("pop", opr_src.data_size == 8 ? "b" : (opr_src.data_size == 16 ? "w" : "l"), 1, &src);
 }
 
 make_instr_func(popa){
 	POPONE(&cpu.edi);
 	POPONE(&cpu.esi);
 	POPONE(&cpu.ebp);
-	cpu.esp += data_size / 8;
+	// cpu.esp += data_size / 8;
+	POPONE(&cpu.esp);
 	POPONE(&cpu.ebx);
 	POPONE(&cpu.edx);
 	POPONE(&cpu.ecx);

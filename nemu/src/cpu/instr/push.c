@@ -29,7 +29,7 @@ void PUSHONE(uint32_t data){
 	dest.val = data;
 	dest.sreg = SREG_SS;
 	operand_write(&dest);
-	print_asm_1("push", "", 1, &dest);
+	print_asm_1("push", opr_src.data_size == 8 ? "b" : (opr_src.data_size == 16 ? "w" : "l"), 1, &dest);
 }
 
 make_instr_func(pusha){
