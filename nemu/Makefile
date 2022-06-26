@@ -1,6 +1,6 @@
 .PHONY: clean
 
-CC := gcc
+CC := clang
 LD := ld
 CFLAGS := -ggdb3 -MMD -MP -Wall -Werror -O2 -I./include -I../include -I../libs -I../libs/nemu-ref/include -m32
 LDFLAGS := -lreadline -lSDL -m32
