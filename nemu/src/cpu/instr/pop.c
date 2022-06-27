@@ -38,8 +38,8 @@ make_instr_func(popa){
 	POPONE(&cpu.edi);
 	POPONE(&cpu.esi);
 	POPONE(&cpu.ebp);
-	// cpu.esp += data_size / 8;
-	POPONE(&cpu.esp);
+	cpu.esp += data_size / 8;
+	// POPONE(&cpu.esp);
 	POPONE(&cpu.ebx);
 	POPONE(&cpu.edx);
 	POPONE(&cpu.ecx);
