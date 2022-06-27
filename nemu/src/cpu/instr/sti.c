@@ -2,3 +2,8 @@
 /*
 Put the implementations of `sti' instructions here.
 */
+
+make_instr_func(sti){
+	cpu.eflags.IF = 0;
+	return 1;
+}
