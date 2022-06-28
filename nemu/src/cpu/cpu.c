@@ -134,11 +134,12 @@ int exec_inst()
 	// get the opcode
 	opcode = instr_fetch(cpu.eip, 1);
 	++cnt;
-#ifdef PRINT_INSTR_COUNT
-	// printf("opcode = %02x, eip = 0x%x, cnt = %d\n", opcode, cpu.eip, cnt);
-	// for(int i = cpu.eip; i < cpu.eip + 15; ++i){
-	// 	printf("%02x ", instr_fetch(i, 1));
-	// }printf("\n");
+#define PRINT_INSTR
+#ifdef PRINT_INSTR
+	printf("opcode = %02x, eip = 0x%x, cnt = %d\n", opcode, cpu.eip, cnt);
+	for(int i = cpu.eip; i < cpu.eip + 15; ++i){
+		printf("%02x ", instr_fetch(i, 1));
+	}printf("\n");
 #endif
 // instruction decode and execution
 #ifdef NEMU_REF_INSTR
