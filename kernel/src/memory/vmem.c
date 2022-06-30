@@ -19,11 +19,11 @@ void create_video_mapping()
 	 */
 
 	// panic("please implement me");
-	
+
 	PDE *updir = (PDE *)va_to_pa(get_updir());
-	PTE *ptableaddr = (PTE *)va_to_pa(ptable);
+	PTE *ptableaddr = ptable;
 	int i;
-	updir->val = make_pde(ptableaddr);
+	updir->val = make_pde(va_to_pa(ptableaddr));
 	ptableaddr += 0xa0;
 	// need 16 pages
 	for(i = 0; i < SCR_SIZE / PAGE_SIZE + 1; i++){
