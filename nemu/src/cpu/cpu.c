@@ -134,7 +134,7 @@ int exec_inst()
 	// get the opcode
 	opcode = instr_fetch(cpu.eip, 1);
 	++cnt;
-#define PRINT_INSTR
+// #define PRINT_INSTR
 #ifdef PRINT_INSTR
 	printf("opcode = %02x, eip = 0x%x, cnt = %d\n", opcode, cpu.eip, cnt);
 	for(int i = cpu.eip; i < cpu.eip + 15; ++i){
