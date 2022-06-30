@@ -25,10 +25,22 @@ uint32_t paddr_read(paddr_t paddr, size_t len)
 {
 	uint32_t ret = 0;
 	assert(paddr + len <= MEM_SIZE_B && paddr >= 0);
+#ifdef HAS_DEVICE_VGA
+
+	int map_NO = is_mmio(paddr);
+	if(map_NO != -1)
+		ret = mmio_read(paddr, len, map_NO);
+	else
+		ret = hw_mem_read(paddr, len);
+
+#else
+
 #ifdef CACHE_ENABLED
 	ret = cache_read(paddr, len);
 #else
 	ret = hw_mem_read(paddr, len);
+#endif
+
 #endif
 	return ret;
 }
@@ -36,10 +48,22 @@ uint32_t paddr_read(paddr_t paddr, size_t len)
 void paddr_write(paddr_t paddr, size_t len, uint32_t data)
 {
 	assert(paddr + len <= MEM_SIZE_B && paddr >= 0);
+#ifdef HAS_DEVICE_VGA
+
+	int map_NO = is_mmio(paddr);
+	if(map_NO != -1)
+		mmio_write(paddr, len, data, map_NO);
+	else
+		hw_mem_write(paddr, len, data);
+
+#else
+
 #ifdef CACHE_ENABLED
 	cache_write(paddr, len, data);
 #else
 	hw_mem_write(paddr, len, data);
+#endif
+
 #endif
 }
 
