@@ -43,7 +43,11 @@ uint32_t loader()
 			ph->p_paddr = mm_malloc(ph->p_vaddr, ph->p_memsz);
 #endif
             /* copy the segment from the ELF file to its proper memory area */
-            memcpy((void *)ph->p_paddr, (void *)elf + ph->p_offset, ph->p_filesz);
+#ifdef HAS_DEVICE_IDE
+            ide_read((uint8_t *)ph->p_paddr, ELF_OFFSET_IN_DISK + ph->p_offset, ph->p_filesz);
+#else
+			memcpy((void *)ph->p_paddr, (void *)elf + ph->p_offset, ph->p_filesz);
+#endif
             /* zeror the memory area [vaddr + file_sz, vaddr + mem_sz) */
             if(ph->p_filesz < ph->p_memsz){
 				memset((void *)(ph->p_paddr + ph->p_filesz), 0, ph->p_memsz - ph->p_filesz);
