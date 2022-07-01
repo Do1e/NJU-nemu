@@ -82,6 +82,7 @@ test_pa-2-1: nemu
 	./nemu/nemu --autorun --testcase string
 	./nemu/nemu --autorun --testcase hello-str 
 	./nemu/nemu --autorun --testcase test-float
+	./nemu/nemu --autorun --testcase test-call
 
 test_pa-2-2: nemu 
 	make test_batch-2-2-mute
@@ -179,6 +180,7 @@ test_batch-2-2-mute:
 	./nemu/nemu --autorun --testcase string --kernel
 	./nemu/nemu --autorun --testcase hello-str  --kernel
 	./nemu/nemu --autorun --testcase test-cache --kernel
+	./nemu/nemu --autorun --testcase test-call --kernel
 	./nemu/nemu --autorun --testcase test-float --kernel
 
 test_batch-3-3-mute:
@@ -210,5 +212,6 @@ test_batch-3-3-mute:
 	./nemu/nemu --autorun --testcase struct --kernel
 	./nemu/nemu --autorun --testcase string --kernel
 	./nemu/nemu --autorun --testcase hello-str  --kernel
+	./nemu/nemu --autorun --testcase test-call --kernel
 	./nemu/nemu --autorun --testcase test-float --kernel
 
