@@ -1,3 +1,6 @@
+// 测试call指令
+// 191180028 刁培杰
+
 #include "trap.h"
 
 int add(int a, int b){
@@ -12,7 +15,6 @@ int mul(int a, int b){
 int div(int a, int b){
 	return a / b;
 }
-
 
 static struct{
 	int (*function)(int a, int b);
