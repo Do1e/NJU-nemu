@@ -1,7 +1,7 @@
 build/*
 .cache/*
 scripts/.single_exec_res
-.sync.ffs_db
+*.ffs_db
 .vscode/*
 *.o
 !start.o
