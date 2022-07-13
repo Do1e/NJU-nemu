@@ -3,6 +3,7 @@
 Put the implementations of `lidt' instructions here.
 */
 
+#ifdef IA32_INTR
 make_instr_func(lidt){
 	OPERAND src;
 	int len = 1;
@@ -20,3 +21,4 @@ make_instr_func(lidt){
 	print_asm_1("lidt", "", len + 1, &src);
 	return len;
 }
+#endif
