@@ -2,9 +2,8 @@
 /*
 Put the implementations of `lidt' instructions here.
 */
-
-#ifdef IA32_INTR
 make_instr_func(lidt){
+#ifdef IA32_INTR
 	OPERAND src;
 	int len = 1;
 	src.data_size = data_size;
@@ -20,5 +19,7 @@ make_instr_func(lidt){
 	cpu.idtr.base = src.val;
 	print_asm_1("lidt", "", len + 1, &src);
 	return len;
-}
+#else
+	return 0;
 #endif
+}
