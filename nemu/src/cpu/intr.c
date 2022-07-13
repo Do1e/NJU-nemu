@@ -2,6 +2,7 @@
 #include "cpu/instr.h"
 #include "memory/memory.h"
 
+#ifdef IA32_INTR
 static void push(uint32_t val){
 	OPERAND dest;
 	data_size = 32;
@@ -13,6 +14,7 @@ static void push(uint32_t val){
 	dest.sreg = SREG_SS;
 	operand_write(&dest);
 }
+#endif
 
 void raise_intr(uint8_t intr_no)
 {
